@@ -6,10 +6,10 @@ function Student(props) {
     <div >
       {props.students.map(student =>
           <>
-          <hr/>
-            <div key={student.name}>Name: {student.name}</div>
-        <hr/>
-            <div key={student.name}>Bio: {student.bio}</div>
+            <hr/>
+            <h2 key={student.name}>{student.name}</h2>
+            <hr/>
+            <div key={student.name}>{student.bio}</div>
             <h3>Scores</h3>
             <Scores scores={student.scores} />
         </>
